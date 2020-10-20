@@ -1,0 +1,20 @@
+{
+  "name": "furo_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "furo_yang"
+  ],
+  "author": "ywq",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "vue": "^2.6.12",
+    "webpack": "^5.1.3"
+  }
+}
