@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     //项目入口文件
@@ -38,7 +39,19 @@ module.exports = {
                 'css-loader',
                 'less-loader'
             ]
+        },{
+            test: /\.(png|jpg|gif|svg)$/,
+            loader: 'file-loader',
+            option: {
+                name: '[name].[ext]?[hash]'
+            }
+        },{
+            test: /\.vue$/,
+            loader: 'vue-loader'
         }
         ]
-    }
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 };
