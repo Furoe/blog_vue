@@ -15,5 +15,13 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         overlay: true
+    },
+    resolve: {
+        //路径别名
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': path.resolve(__dirname, './src')
+        },
+        extensions: ['.js', '.vue', '.json']
     }
 };
