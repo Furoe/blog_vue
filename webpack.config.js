@@ -23,5 +23,22 @@ module.exports = {
             '@': path.resolve(__dirname, './src')
         },
         extensions: ['.js', '.vue', '.json']
+    },
+    module: {
+        rules: [{
+            test: /\.css$/,
+            use: [
+                'vue-style-loader',
+                'css-loader'
+            ]
+        },{
+            test: /\.less$/,
+            use: [
+                'vue-style-loader',
+                'css-loader',
+                'less-loader'
+            ]
+        }
+        ]
     }
 };
