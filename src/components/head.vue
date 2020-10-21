@@ -7,6 +7,7 @@
 	</div>
 </template>
 <script>
+	import './assets/style/index.less';
 	export default {
 		name: 'homeHeader',
 		data(){
@@ -20,9 +21,3 @@
 		}
 	}
 </script>
-<style lang="less" scoped>
-	@textColor: red;
-	#headText{
-		color: @textColor;
-	}
-</style>
