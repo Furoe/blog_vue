@@ -7,7 +7,7 @@
 	</div>
 </template>
 <script>
-	import './assets/style/index.less';
+	import '@/assets/style/index.less';
 	export default {
 		name: 'homeHeader',
 		data(){
