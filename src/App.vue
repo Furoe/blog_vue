@@ -12,9 +12,3 @@
 		}
 	}
 </script>
-<style lang="less" scoped>
-	@appColor: red;
-	homeHeader {
-		color: @appColor;
-	}
-</style>
