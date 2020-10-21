@@ -8,7 +8,7 @@ module.exports = {
     output: {
         //打包出口路径
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
+        publicPath: './dist/',
         //打包后的文件名
         filename: 'main.js'
     },

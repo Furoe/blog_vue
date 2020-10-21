@@ -2,7 +2,7 @@
 	<div>
 		header
 		<span>color</span>
-		<img :src="require('@/assets/images/avator.jpg')">
+		<img :src="avator">
 		{{this.message}}-{{this.user}}
 	</div>
 </template>
