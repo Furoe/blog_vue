@@ -21,7 +21,7 @@
 		}
 	}
 </script>
-<style scoped lang="less">
+<style scoped lang="less" rel="stylesheet/less">
 	@import '~@/assets/style/index.less';
 	#test{
 		color: green;
