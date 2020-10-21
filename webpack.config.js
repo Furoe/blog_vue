@@ -48,7 +48,12 @@ module.exports = {
             }
         },{
             test: /\.vue$/,
-            loader: 'vue-loader'
+            loader: 'vue-loader',
+            options: {
+                loaders: {
+                    'less': 'vue-style-loader!css-loader!less-loader'
+                }
+            }
         },{
             test: /\.ts$/,
             loader: 'ts-loader',
