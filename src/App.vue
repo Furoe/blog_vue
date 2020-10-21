@@ -14,7 +14,7 @@
 </script>
 <style lang="less" scoped>
 	@appColor: red;
-	#app {
+	homeHeader {
 		color: @appColor;
 	}
 </style>

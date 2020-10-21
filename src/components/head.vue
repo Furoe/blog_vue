@@ -2,7 +2,7 @@
 	<div>
 		header
 		<span>color</span>
-		<img src="@/assets/images/avator.jpg">
+		<img src="{{avator}}">
 		{{this.message}}-{{this.user}}
 	</div>
 </template>
@@ -11,6 +11,7 @@
 		name: 'homeHeader',
 		data(){
 			return {
+				avator: require("@/assets/images/avator.jpg"),
 				message: 'hello world'
 			}
 		},
