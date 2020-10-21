@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="headText">
 		header
 		<span>color</span>
 		<img :src="avator">
@@ -20,3 +20,9 @@
 		}
 	}
 </script>
+<style lang="less" scoped>
+	@textColor: red;
+	#headText{
+		color: @textColor;
+	}
+</style>
