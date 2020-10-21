@@ -35,6 +35,8 @@ module.exports = {
         },{
             test: /\.less$/,
             use: [
+                'vue-style-loader',
+                'css-loader',
                 'less-loader'
             ]
         },{
@@ -49,7 +51,7 @@ module.exports = {
             loader: 'vue-loader',
             options: {
                 loaders: {
-                    'less': 'less-loader'
+                    'less': 'vue-style-loader!css-loader!less-loader'
                 }
             }
         },{
