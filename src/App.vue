@@ -4,7 +4,7 @@
 	</div>
 </template>
 <script>
-	import homeHeader from '@components/head.vue';
+	import homeHeader from '@/components/head.vue';
 	export default {
 		name: 'app',
 		component: {
