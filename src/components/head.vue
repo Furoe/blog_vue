@@ -2,7 +2,7 @@
 	<div>
 		header
 		<span>color</span>
-		<img src="{{avator}}">
+		<img :src="avator">
 		{{this.message}}-{{this.user}}
 	</div>
 </template>
