@@ -1,5 +1,5 @@
 <template>
-	<div id="headText">
+	<div id="textColor">
 		header
 		<span>color</span>
 		<img :src="avator">
@@ -7,7 +7,7 @@
 	</div>
 </template>
 <script>
-	@import '~@/assets/style/index.less';
+	
 	export default {
 		name: 'homeHeader',
 		data(){
@@ -22,7 +22,5 @@
 	}
 </script>
 <style scoped lang="less">
-	#headText{
-		color: red;
-	}
+	@import '../assets/style/index.less';
 </style>
