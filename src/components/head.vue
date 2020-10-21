@@ -21,3 +21,8 @@
 		}
 	}
 </script>
+<style scoped lang="less">
+	#headText{
+		color: red;
+	}
+</style>
