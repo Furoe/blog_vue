@@ -1,7 +1,7 @@
 <template>
 	<div id="textColor">
 		header
-		<span>color</span>
+		<span id="test">color</span>
 		<img :src="avator">
 		{{this.message}}-{{this.user}}
 	</div>
@@ -23,4 +23,7 @@
 </script>
 <style scoped lang="less">
 	@import '~@/assets/style/index.less';
+	#test{
+		color: green;
+	}
 </style>
