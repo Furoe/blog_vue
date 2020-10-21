@@ -7,7 +7,7 @@
 	import homeHeader from '@/components/head.vue';
 	export default {
 		name: 'App',
-		component: {
+		components: {
 			homeHeader
 		}
 	}
