@@ -4,5 +4,5 @@ import './assets/style/index.less';
 //require('../assets/style/index.less');
 
 new Vue({
-	render: h => (App)
+	render: h => h(App)
 }).$mount('#app');
