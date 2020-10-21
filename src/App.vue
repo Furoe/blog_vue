@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<homeHeader user="vict"></homeHeader>
+		<div id="test1">测试</div>
 	</div>
 </template>
 <script>
@@ -12,3 +13,8 @@
 		}
 	}
 </script>
+<style type="text/css">
+	#test1{
+		color: #555555;
+	}
+</style>
