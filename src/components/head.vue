@@ -21,6 +21,11 @@
 		}
 	}
 </script>
+<style type="text/css">
+	#textColor{
+		color: red;
+	}
+</style>
 <style scoped lang="less">
 	@import '../assets/style/index.less';
 </style>
