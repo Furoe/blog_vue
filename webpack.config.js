@@ -51,6 +51,7 @@ module.exports = {
             loader: 'vue-loader',
             options: {
                 loaders: {
+                    'css': 'vue-style-loader!css-loader',
                     'less': 'vue-style-loader!css-loader!less-loader'
                 }
             }
