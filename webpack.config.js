@@ -5,7 +5,9 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     //项目入口文件
-    entry: './src/main.js',
+    entry: {
+        app: ['@babel/polyfill', './src/main.ts']
+    },
     output: {
         //打包出口路径
         path: path.resolve(__dirname, './dist'),
@@ -59,6 +61,7 @@ module.exports = {
         },{
             test: /\.ts$/,
             loader: 'ts-loader',
+            exclude: '/node_modules/',
             options: {
                 appendTsSuffixTo: [/\.vue$/]
             }
