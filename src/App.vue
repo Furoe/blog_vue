@@ -1,20 +1,25 @@
 <template>
-	<div>
+	<div class="contentBody">
+		<headNav></headNav>
 		<homeHeader user="vict"></homeHeader>
 		<div id="test1">测试</div>
 	</div>
 </template>
-<script>
-	import homeHeader from '@/components/head.vue';
-	export default {
-		name: 'App',
-		components: {
-			homeHeader
-		}
+<script lang="ts">
+import {Vue, Component, Prop, Emit, Watch} from 'vue-property-decorator';
+import headNav from './components/head_nav.vue';
+@Component({
+	components: {
+		headNav
 	}
+})
+export default class App extends Vue {
+
+}
 </script>
-<style type="text/css">
+<style lang="less">
+	@color: #555555;
 	#test1{
-		color: #555555;
+		color: @color;
 	}
 </style>
