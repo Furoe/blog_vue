@@ -15,6 +15,10 @@ import headNav from './components/head_nav.vue';
 })
 export default class App extends Vue {
 	//data
+
+	private mounted() :void {
+		console.log('ok');
+	}
 	
 
 }
