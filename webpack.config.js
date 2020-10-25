@@ -76,10 +76,10 @@ module.exports = {
         ]
     },
     plugins: [
+        new VueLoaderPlugin(),
         new htmlWebpackPlugin({
             template: path.join(__dirname, './index.html'),
             filename: 'index.html'
-        }),
-        new VueLoaderPlugin()
+        })
     ]
 };
