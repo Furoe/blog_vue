@@ -26,7 +26,7 @@ module.exports = {
             'vue$': 'vue/dist/vue.esm.js',
             '@': path.resolve(__dirname, './src')
         },
-        extensions: ['.ts', '.vue', '.js', '.json', '.less']
+        extensions: ['.vue', '.js', '.json', '.less', '.ts']
     },
     module: {
         rules: [{
@@ -78,7 +78,7 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new htmlWebpackPlugin({
-            template: path.join(__dirname, './index.html'),
+            template: './index.html',
             filename: 'index.html'
         })
     ]
