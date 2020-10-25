@@ -14,9 +14,5 @@ export default class headNav extends Vue{
 }
 </script>
 <style lang="less">
-    #h_content{
-        width: 100%;
-        height: 50px;
-        background-color: beige;
-    }
+    
 </style>
