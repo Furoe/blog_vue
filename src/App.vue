@@ -17,6 +17,7 @@ import homeHeader from './components/head.vue';
 })
 export default class App extends Vue {
 	//data
+	
 
 	private mounted() :void {
 		console.log('ok');
