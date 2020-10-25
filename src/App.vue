@@ -6,7 +6,7 @@
 	</div>
 </template>
 <script lang="ts">
-import {Vue, Component, Prop, Emit, Watch} from 'vue-property-decorator';
+import {Vue, Component, Prop, Watch} from 'vue-property-decorator';
 import headNav from './components/head_nav.vue';
 @Component({
 	components: {
@@ -14,6 +14,8 @@ import headNav from './components/head_nav.vue';
 	}
 })
 export default class App extends Vue {
+	//data
+	
 
 }
 </script>
