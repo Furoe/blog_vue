@@ -5,9 +5,9 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     //项目入口文件
-    entry: '.src/main.ts',
-        //app: ['@babel/polyfill', './src/main.ts']
-    //},
+    entry: {
+        app: ['@babel/polyfill', './src/main.ts']
+    },
     output: {
         //打包出口路径
         path: path.resolve(__dirname, './dist'),
