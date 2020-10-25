@@ -6,6 +6,7 @@
 	</div>
 </template>
 <script lang="ts">
+import '@/assets/style/index.less';
 import {Vue, Component, Prop, Watch} from 'vue-property-decorator';
 import headNav from './components/head_nav.vue';
 import homeHeader from './components/head.vue';
@@ -27,11 +28,5 @@ export default class App extends Vue {
 }
 </script>
 <style>
-	.contentBody{
-		width: 100%;
-		height: 100%;
-	}
-	#test1{
-		color: #555555;
-	}
+	
 </style>
