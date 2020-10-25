@@ -77,10 +77,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin(),
         new htmlWebpackPlugin({
             template: './index.html',
             filename: 'index.html'
-        })
+        }),
+        new VueLoaderPlugin()
     ]
 };
