@@ -26,9 +26,8 @@ export default class App extends Vue {
 
 }
 </script>
-<style lang="less">
-	@color1: #555555;
+<style>
 	#test1{
-		color: @color1;
+		color: #555555;
 	}
 </style>
