@@ -27,6 +27,10 @@ export default class App extends Vue {
 }
 </script>
 <style>
+	.contentBody{
+		width: 100%;
+		height: 100%;
+	}
 	#test1{
 		color: #555555;
 	}

@@ -5,14 +5,21 @@
         "emitDecoratorMetadata":  true,
         "noEmitOnError": true,
         "target": "ES5",
-        "module": "ES2015",
+        "module": "ESNext",
         "strict": true,
         "allowJs": true,
         "noEmit": false,
         "noImplicitThis": true,
         "esModuleInterop": true,
         "sourceMap": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "ES5",
+            "ES6",
+            "ES2017",
+            "ES2015.Promise"
+        ]
     },
     "include": [
         "src/**/*",

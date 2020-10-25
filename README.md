@@ -26,6 +26,8 @@ npm i @babel/runtime --save
 首先安装ts的预处理器
 ```
 npm i typescript ts-loader --save-dev
+//约束代码格式, tslint不更新了，eslint即将支持ts
+npm i tslint tslint-loader tslint-config-standard --save-dev
 ```
 配置webpack的预处理规则
 ```
@@ -44,6 +46,13 @@ declare module '*.vue' {
     export default Vue;
 }
 ```
+修改entry
+```
+entry: {
+    app: './src/main.ts'
+}
+```  
+
 安装Vue对TypeScript支持的依赖
 ```
 npm i vue-class-component vue-property-decorator --save-dev
