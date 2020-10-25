@@ -8,9 +8,11 @@
 <script lang="ts">
 import {Vue, Component, Prop, Watch} from 'vue-property-decorator';
 import headNav from './components/head_nav.vue';
+import homeHeader from './components/head.vue';
 @Component({
 	components: {
-		headNav
+		headNav,
+		homeHeader
 	}
 })
 export default class App extends Vue {
@@ -24,5 +26,8 @@ export default class App extends Vue {
 }
 </script>
 <style lang="less">
-	
+	@color1: #555555;
+	#test1{
+		color: @color1;
+	}
 </style>
