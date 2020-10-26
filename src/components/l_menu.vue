@@ -10,7 +10,14 @@
         </div>
         <div class="menuList">
             <ul class="nav">
-                <li class="menu-item"></li>
+                <li class="menu-item">首页</li>
+                <li class="menu-item">归档</li>
+                <li class="menu-item">分类</li>
+                <li class="menu-item">标签</li>
+                <li class="menu-item">项目</li>
+                <li class="menu-item">友链</li>
+                <li class="menu-item">工具</li>
+                <li class="menu-item">关于</li>
             </ul>
         </div>
     </div>
@@ -46,5 +53,11 @@ export default class l_menu extends Vue{
         height: 70px;
         border-radius: 50%;
         background-size: 100% 100%;
+    }
+    .nav{
+        list-style: none;
+    }
+    .menu-item{
+        width: 100%;
     }
 </style>
