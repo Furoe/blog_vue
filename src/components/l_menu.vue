@@ -5,12 +5,14 @@
                 <a id="avator" href="/" target="_blank">
                     <img :src="require('@/assets/images/avator.jpg')">
                 </a>
-            </div>
-            
+                <h2 id="name">{{auhtor}}</h2>
+            </div> 
         </div>
-        
-        <div class="name"></div>
-        <div class="menuList"></div>
+        <div class="menuList">
+            <ul class="nav">
+                <li class="menu-item"></li>
+            </ul>
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -18,17 +20,13 @@ declare function require(img:String) :String;
 import {Vue, Component} from 'vue-property-decorator';
 @Component
 export default class l_menu extends Vue{
-
+    private auhtor:String = 'furo yang';
 }
 </script>
 <style lang="less" scoped>
     .content-col{
         width: 300px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: beige;
         position: fixed;
         top: 0;
@@ -37,6 +35,11 @@ export default class l_menu extends Vue{
     }
     .profile-block{
         padding: 20px 15px 10px;
+        text-align: center;
+    }
+    #name{
+        font-size: 18px;
+        margin-top: 10px;
     }
     img{
         width: 70px;
