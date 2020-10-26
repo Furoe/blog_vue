@@ -1,7 +1,7 @@
 <template>
 	<div class="contentBody">
 		<!-- <headNav></headNav> -->
-		<l-menu></l-menu>
+		<l_menu></l_menu>
 		<slimScroll></slimScroll>
 		<HomeContent></HomeContent>
 		<div id="test1">测试</div>
