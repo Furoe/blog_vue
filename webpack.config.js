@@ -35,16 +35,16 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [
-                //{loader: MiniCssExtractPlugin.loader},
-                'vue-style-loader',
+                {loader: MiniCssExtractPlugin.loader},
+                //'vue-style-loader',
                 'css-loader'
             ],
             include: path.resolve(__dirname, './src')
         },{
             test: /\.less$/,
             use: [
-                //{loader: MiniCssExtractPlugin.loader},
-                'vue-style-loader',
+                {loader: MiniCssExtractPlugin.loader},
+                //'vue-style-loader',
                 'css-loader',
                 'less-loader'
             ],
@@ -88,9 +88,9 @@ module.exports = {
             template: path.resolve(__dirname, './index.html'),
             filename: 'index.html'
         }),
-        // new MiniCssExtractPlugin({
-        //     filename: 'css/[name].css'
-        // }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].css'
+        }),
         new VueLoaderPlugin(),
         new CleanWebpackPlugin()
     ]
