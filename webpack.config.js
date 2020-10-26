@@ -86,9 +86,9 @@ module.exports = {
             template: path.resolve(__dirname, './index.html'),
             filename: 'index.html'
         }),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].css'
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: 'css/[name].css'
+        // }),
         new VueLoaderPlugin(),
         new CleanWebpackPlugin()
     ]
