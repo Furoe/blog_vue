@@ -72,10 +72,16 @@ export default class l_menu extends Vue{
     }
     .nav{
         list-style: none;
-        color: #f78769;
+        padding-left: 0;
     }
     .menu-item{
         width: 100%;
-        padding: 10px 20px;
+        a{
+            padding: 10px 20px;
+            text-decoration: none;
+            span{
+                color: #f78769;
+            }
+        }
     }
 </style>
