@@ -35,14 +35,17 @@ module.exports = {
             use: [
                 'vue-style-loader',
                 'css-loader'
-            ]
+            ],
+            include: path.resolve(__dirname, './src')
         },{
             test: /\.less$/,
             use: [
                 'vue-style-loader',
                 'css-loader',
                 'less-loader'
-            ]
+            ],
+            exclude: /node_modules/,
+            include: path.resolve(__dirname, './src')
         },{
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
@@ -78,7 +81,7 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            template: './index.html',
+            template: path.resolve(__dirname, './index.html'),
             filename: 'index.html'
         }),
         new VueLoaderPlugin()
