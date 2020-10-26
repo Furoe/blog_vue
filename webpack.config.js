@@ -35,14 +35,16 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [
-                {loader: MiniCssExtractPlugin.loader},
+                //{loader: MiniCssExtractPlugin.loader},
+                'vue-style-loader',
                 'css-loader'
             ],
             include: path.resolve(__dirname, './src')
         },{
             test: /\.less$/,
             use: [
-                {loader: MiniCssExtractPlugin.loader},
+                //{loader: MiniCssExtractPlugin.loader},
+                'vue-style-loader',
                 'css-loader',
                 'less-loader'
             ],
