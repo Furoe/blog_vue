@@ -76,8 +76,6 @@ export default class l_menu extends Vue{
     }
     .menu-item{
         width: 100%;
-        li{
-            padding: 10px 20px;
-        }
+        padding: 10px 20px;
     }
 </style>
