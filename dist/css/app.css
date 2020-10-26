@@ -1,0 +1,24 @@
+.contentBody {
+  width: 100%;
+  height: 100%;
+}
+#test1 {
+  color: #555555;
+}
+
+#h_content[data-v-6aa3c054] {
+  width: 100%;
+  height: 50px;
+  color: bisque;
+}
+img[data-v-6aa3c054] {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+
+#test{
+	color: #c3c3c3;
+}
+
