@@ -1,14 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
-var htmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     //项目入口文件
     entry: {
-        //app: ['./node_modules/babel-polyfill', './src/main.ts']
-        app: './src/main.ts'
+        app: ['./node_modules/babel-polyfill', './src/main.ts']
+        //app: './src/main.ts'
     },
     output: {
         //打包出口路径
@@ -81,13 +82,14 @@ module.exports = {
         ]
     },
     plugins: [
-        new htmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './index.html'),
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css'
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new CleanWebpackPlugin()
     ]
 };
