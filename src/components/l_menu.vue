@@ -10,14 +10,30 @@
         </div>
         <div class="menuList">
             <ul class="nav">
-                <li class="menu-item">首页</li>
-                <li class="menu-item">归档</li>
-                <li class="menu-item">分类</li>
-                <li class="menu-item">标签</li>
-                <li class="menu-item">项目</li>
-                <li class="menu-item">友链</li>
-                <li class="menu-item">工具</li>
-                <li class="menu-item">关于</li>
+                <li class="menu-item">
+                    <a href="/"><span>首页</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>归档</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>分类</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>标签</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>项目</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>友链</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>工具</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="/"><span>关于</span></a>
+                </li>
             </ul>
         </div>
     </div>
@@ -56,8 +72,12 @@ export default class l_menu extends Vue{
     }
     .nav{
         list-style: none;
+        color: #f78769;
     }
     .menu-item{
         width: 100%;
+        li{
+            padding: 10px 20px;
+        }
     }
 </style>
