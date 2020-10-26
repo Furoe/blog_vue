@@ -79,6 +79,7 @@ export default class l_menu extends Vue{
         a{
             padding: 10px 20px;
             text-decoration: none;
+            display: block;
             span{
                 color: #f78769;
             }
