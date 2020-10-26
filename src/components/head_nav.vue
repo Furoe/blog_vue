@@ -15,10 +15,10 @@ export default class headNav extends Vue{
 }
 </script>
 <style lang="less" scoped>
-    #h_content{
+    .h_content{
         width: 100%;
         height: 50px;
-        color: bisque;
+        color: beige;
     }
     img{
         width: 25px;
