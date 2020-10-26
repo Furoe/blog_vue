@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var htmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     //项目入口文件
@@ -33,14 +34,14 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [
-                'vue-style-loader',
+                {loader: MiniCssExtractPlugin.loader},
                 'css-loader'
             ],
             include: path.resolve(__dirname, './src')
         },{
             test: /\.less$/,
             use: [
-                'vue-style-loader',
+                {loader: MiniCssExtractPlugin.loader},
                 'css-loader',
                 'less-loader'
             ],
@@ -83,6 +84,9 @@ module.exports = {
         new htmlWebpackPlugin({
             template: path.resolve(__dirname, './index.html'),
             filename: 'index.html'
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].css'
         }),
         new VueLoaderPlugin()
     ]
