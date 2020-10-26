@@ -1,6 +1,14 @@
 <template>
     <div class="content-col">
-        <img :src="require('@/assets/images/avator.jpg')">
+        <div class="navBar-header">
+            <div class="profile-block">
+                <a id="avator" href="/" target="_blank">
+                    <img :src="require('@/assets/images/avator.jpg')">
+                </a>
+            </div>
+            
+        </div>
+        
         <div class="name"></div>
         <div class="menuList"></div>
     </div>
@@ -22,6 +30,13 @@ export default class l_menu extends Vue{
         justify-content: center;
         align-items: center;
         background-color: beige;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .profile-block{
+        padding: 20px 15px 10px;
     }
     img{
         width: 70px;
